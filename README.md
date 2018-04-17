@@ -23,7 +23,7 @@ The boilerplate is designed to enable PowerSchool Plugin development with modern
 	- `npm i`
 	- or
 	- `yarn install`
-8. If supported initialize eslint
+8. Open and setup `gulpfile.config.js` if plugin is not standalone.
+9. If supported initialize eslint
 	- `eslint -init`
-9. Open and setup `gulpfile.config.js` if plugin is not standalone.
 
