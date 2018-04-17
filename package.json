@@ -1,0 +1,22 @@
+{
+  "name": "ps-plugin-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate for building PowerSchool Plugins with babel, webpack, gulp.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IronCountySchoolDistrict/ps-plugin-boilerplate.git"
+  },
+  "keywords": [
+    "powerschool"
+  ],
+  "author": "Issac Gable",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IronCountySchoolDistrict/ps-plugin-boilerplate/issues"
+  },
+  "homepage": "https://github.com/IronCountySchoolDistrict/ps-plugin-boilerplate#readme"
+}
