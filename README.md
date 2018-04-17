@@ -7,8 +7,10 @@ The boilerplate is designed to enable PowerSchool Plugin development with modern
 	- `rm -rf .git`
 - Rename the ps-plugin-boilerplate directory to the desired name of the application. 
 	- `mv ps-plugin-boilerplate {{app_name}}`
+- All `{{tags}}` should be renamed to the respective `{{tag_name}}`
 - Initialize git and push. 
 	- `git init`
+	- `git remote add origin git@github.com:User/UserRepo.git`
 	- `git add .`
 	- `git commit -m "first commit"`
 	- `git push origin HEAD`
@@ -18,4 +20,4 @@ The boilerplate is designed to enable PowerSchool Plugin development with modern
 	- `yarn install`
 - If supported initialize eslint
 	- `eslint -init`
-- All `{{tags}}` should be renamed to the respective `{{tag_name}}`
+
