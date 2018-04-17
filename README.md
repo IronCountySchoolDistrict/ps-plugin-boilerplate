@@ -6,6 +6,7 @@ The boilerplate is designed to enable PowerSchool Plugin development with modern
 2. Delete .git in the directory. 
 	- `rm -rf .git`
 3. Rename the ps-plugin-boilerplate directory to the desired name of the application. 
+	- `cd ..`
 	- `mv ps-plugin-boilerplate {{app_name}}`
 4. Open package.json and change the following.
 	- `name:`
