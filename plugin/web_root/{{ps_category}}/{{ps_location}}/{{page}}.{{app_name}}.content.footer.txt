@@ -1,0 +1,5 @@
+<link rel="stylesheet" href="/scripts/{{app_name}}/css/index.bundle.css">
+<script src="/scripts/{{app_name}}/js/index.bundle.js"></script>
+<script>
+    index.default()
+</script>
