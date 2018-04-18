@@ -20,7 +20,7 @@ The boilerplate is designed to enable PowerSchool Plugin development with modern
 	- `git commit -m "first commit"`
 	- `git push origin HEAD`
 7. Install all dependency from package.json
-	- `npm i`
+	- `npm i --save-dev`
 	- or
 	- `yarn install --dev`
 8. If supported initialize eslint
