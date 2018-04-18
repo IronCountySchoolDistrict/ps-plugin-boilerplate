@@ -1,3 +1,4 @@
+
 ## PowerSchool Plugin Boilerplate
 
 The boilerplate is designed to enable PowerSchool Plugin development with modern Javascript standards with Babel transformation. This boilerplate uses Webpack and Gulp to compile the code into a distribution plugin.zip file. 
@@ -13,16 +14,16 @@ The boilerplate is designed to enable PowerSchool Plugin development with modern
 	- `description:`
 	- `author:`
 5. All `{{tags}}` should be renamed to the respective `tag_name`
-6. Initialize git and push. 
+6. Install all dependency from package.json
+	- `npm i --save-dev`
+	- or
+	- `yarn install --dev`
+7. Initialize git and push. 
 	- `git init`
 	- `git remote add origin git@github.com:User/UserRepo.git`
 	- `git add .`
 	- `git commit -m "first commit"`
 	- `git push origin HEAD`
-7. Install all dependency from package.json
-	- `npm i --save-dev`
-	- or
-	- `yarn install --dev`
 8. If supported initialize eslint
 	- `eslint -init`
 9. When development is finished use `gulp4-ps-tasks` to package the application.  
