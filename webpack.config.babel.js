@@ -18,12 +18,12 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: `web_root/scripts/${module.exports.name}/css/[name].bundle.css`
+      filename: `scripts/${module.exports.name}/css/[name].bundle.css`
     })
   ],
   output: {
-    filename: `web_root/scripts/${module.exports.name}/js/[name].bundle.js`,
-    library: '[name]'
+    filename: `scripts/${module.exports.name}/js/[name].bundle.js`,
+    path: path.resolve(__dirname, 'dist/web_root')
   },
   externals: {
     jquery: 'jQuery'
@@ -65,6 +65,13 @@ module.exports = {
           },
           'postcss-loader'
         ]
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        loader: 'file-loader',
+        options: {
+          name: `/images/${module.exports.name}/[name].[ext]`
+        }
       }
     ]
   },

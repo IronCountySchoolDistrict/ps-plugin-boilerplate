@@ -35,6 +35,10 @@ The boilerplate is designed to enable PowerSchool Plugin development with modern
 10. `gulp4-ps-tasks` has several tasks. The boilerplate is only concerned with the two Orchestrator tasks. Orchestrators will call the other tasks as needed.
 	- `gulp createPkgNoImage`
 	- `gulp createPkgWithImage`
+11. To include the SCSS file it is required to import it into the index.js so webpack can complie it.
+	- `import '../css/index.scss'`
+12. To package images add them to the Images/{{App_name}}/ directory. Then referance like so.
+	- `../../../images/{{app_name}}/my_image_file`
 
 ### Standalone Plugin
 
