@@ -14,7 +14,7 @@
     "powerschool"
   ],
   "author": "Issac Gable",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/IronCountySchoolDistrict/ps-plugin-boilerplate/issues"
   },
