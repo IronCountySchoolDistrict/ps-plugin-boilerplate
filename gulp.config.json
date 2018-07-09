@@ -19,5 +19,7 @@
     }
   },
 
+  // Optional: If no --env options is passed to the deploy task,
+  // provide the "image_server_name" that should be used as a default
   "default_deploy_target": "image_server_name"
 }
