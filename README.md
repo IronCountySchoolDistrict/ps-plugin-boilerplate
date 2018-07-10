@@ -41,6 +41,11 @@ The boilerplate is designed to enable PowerSchool Plugin development with modern
 12. To package images add them to the Images/{{App_name}}/ directory. Then referance like so.
 	- `../../../images/{{app_name}}/my_image_file`
 
+### Development
+- In one tab, start the `webpack-serve` dev server with this command: `webpack-serve --config webpack.dev.config.js --require @babel/register`. Note that by running this command, you are also generating a version of the page fragments in `./src` which will load them from `http://localhost:8081`.
+- After `webpack-serve` has started and the build finishes (that's important to let it finish), open a new Terminal instance and build the plugin: `gulp buildPreprocess`. This will copy over everything in `./plugin`, run it through `gulp-preprocess`, and then create a zip file of the plugin. This plugin will load everything from `./src` from `http://localhost:8081`, which means you can quickly see the changes you make in dev. Install this zip file on the PS test server, not live. When it comes time to deploy, follow the instructions below.
+- NOTE: By installing a version of the plugin that loads all of your css/js from `http://localhost:8081`, that means the plugin will only work from the host that is running `webpack-serve`, which is your development machine. 
+
 ### Standalone Plugin
 
 - Run cmd: `gulp createPkgNoImage`
