@@ -102,7 +102,7 @@ const config = {
             PS_URL: 'https://ps.irondistrict.org',
             filename: `{{ps_category}}/{{ps_location}}/{{page}}.{{app_name}}.content.footer.txt`,
             chunks: ['vendor', 'index'],
-            inject: true
+            inject: false
         }),
         
         new WriteFileWebpackPlugin({
